@@ -1,8 +1,11 @@
-module.exports = async function (app) {
+module.exports = async function (app, environment) {
   const express = require('express');
+  // Middleware
 
   app.get('/version', (req, res) => {
-    res.send('Version Endpoint');
+    res.status(200).json({
+      v: environment.SERVICE_VERSION,
+    });
   });
 
   return app;

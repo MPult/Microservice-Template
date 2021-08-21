@@ -16,3 +16,4 @@ app.listen(environment.SERVICE_PORT, (err) => {
 });
 
 module.exports = app;
+module.exports = environment;

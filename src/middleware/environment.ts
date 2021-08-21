@@ -6,5 +6,6 @@
 
 export default {
   SERVICE_NAME: 'Example-Service',
-  SERVICE_PORT: '3001'
-}
+  SERVICE_PORT: '3001',
+  SERVICE_VERSION: '1.0.0',
+};
