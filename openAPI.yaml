@@ -15,7 +15,7 @@ tags:
   description: Will show debug info
 paths:
   /version:
-    post:
+    get:
       tags:
       - version
       summary: Get debug info
