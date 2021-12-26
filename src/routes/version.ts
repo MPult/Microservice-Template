@@ -5,7 +5,6 @@ module.exports = async function (app, environment) {
   // Middleware
 
   app.get('/version', (req, res) => {
-    console.log(env);
     res.status(200).json({
       serviceName: env.SERVICE_VERSION,
       servicePort: env.SERVICE_PORT,
